@@ -1,0 +1,26 @@
+{
+  "name": "cursosvisualthinkingapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcosSilvaG/CursosVisualThinkingAPI.git"
+  },
+  "keywords": [],
+  "author": "Marcos Joel Silva Gallegos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcosSilvaG/CursosVisualThinkingAPI/issues"
+  },
+  "homepage": "https://github.com/MarcosSilvaG/CursosVisualThinkingAPI#readme",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "jest": "^26.0.0"
+  }
+}
