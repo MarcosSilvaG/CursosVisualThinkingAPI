@@ -10,4 +10,12 @@ describe("Tests for ExplorerController class", () => {
         const allStudents = StudentController.getAllStudents();
         expect(allStudents).not.toBeNull();
     });
+    test("3) Return emails from students with certificates == true", () => {
+        const studentsEmailsByCertificate = StudentController.getEmailsByCertificate();
+        expect(studentsEmailsByCertificate.length).toBe(2);
+    });
+    test("4) ", () => {
+        const studentsWithCertification = StudentController.getStudentsByCertification();
+        expect(studentsWithCertification).toContain("algo@algo.com");
+    });
 });
