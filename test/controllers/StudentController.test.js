@@ -18,4 +18,12 @@ describe("Tests for ExplorerController class", () => {
         const studentsWithCertification = StudentController.getEmailsByCertificate();
         expect(studentsWithCertification).toContain("Sharlene@visualpartnership.xyz");
     });
+    test("5) Return the names and credits of students if their credits are 500 or more", () => {
+        const studentsByCredits = StudentController.getStudentsByCredits();
+        expect(studentsByCredits).toHaveLength(studentsByCredits.length);
+    });
+    test("4) Return the emails from students with certificates == tue", () => {
+        const studentsWithCertification = StudentController.getStudentsByCredits();
+        expect(studentsWithCertification[1].name).toContain("Lucinda");
+    });
 });
