@@ -107,7 +107,7 @@ y para el flujo final del proyecto y la API, con separación de responsabilidade
 ```mermaid
 graph TD;
     Reader-->StudentService;
-    ExplorerService-->StudentController
+    StudentService-->StudentController
     StudentController-->Server
 ```
 
